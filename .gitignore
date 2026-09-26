@@ -7,3 +7,8 @@ __pycache__/
 dist/
 build/
 *.egg-info/
+
+# runtime database (WAL mode)
+*.db
+*.db-wal
+*.db-shm

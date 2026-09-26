@@ -1,8 +1,5 @@
-from fastapi import FastAPI
+"""Entry point: run ``uv run uvicorn main:app``."""
 
-app = FastAPI()
+from wqe.api import app
 
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+__all__ = ["app"]
