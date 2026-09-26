@@ -1,8 +1,4 @@
-from fastapi import FastAPI
+"""服务入口：uvicorn main:app"""
+from windowed.service import create_app
 
-app = FastAPI()
-
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+app = create_app()
